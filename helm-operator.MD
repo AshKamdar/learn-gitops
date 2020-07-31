@@ -1,5 +1,23 @@
 # GitOps using Helm Opertor
 
+#0 Set Git credentials
+
+```bash
+git config user.name "AshKamdar"
+git config user.email adventuresincloud@gmail.com
+git config user.username AshKamdar
+
+git config --global user.name "AshKamdar"
+git config --global user.email adventuresincloud@gmail.com
+git config --global user.username AshKamdar
+```
+
+If git error, then use following command
+
+```bash
+git push -u https://AshKamdar:N3#@github.com/AshKamdar/learn-gitops.git master
+```
+
 #1 Add FluxCD repo to helm
 
 ```bash
