@@ -13,5 +13,5 @@ spec:
     path: charts/podinfo
     ref: master
   values:
-    replicaCount: 1
+    replicaCount: 2
     ui.color: red
