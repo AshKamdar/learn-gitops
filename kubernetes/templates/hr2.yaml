@@ -13,4 +13,5 @@ spec:
     path: charts/podinfo
     ref: master
   values:
-    replicaCount: 3
+    replicaCount: 1
+    ui.message: "Wow Ashish. You are great"
