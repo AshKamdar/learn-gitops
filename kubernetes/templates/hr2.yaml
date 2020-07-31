@@ -14,3 +14,4 @@ spec:
     ref: master
   values:
     replicaCount: 1
+    ui.color: red
