@@ -12,3 +12,5 @@ spec:
     git: git@github.com:AshKamdar/learn-gitops.git
     path: charts/podinfo
     ref: master
+  values:
+    replicaCount: 3

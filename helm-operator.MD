@@ -123,7 +123,7 @@ export POD_NAME=$(kubectl get pods --namespace default -l "app=podinfo,release=p
 
 echo "Visit http://127.0.0.1:8080 to use your application"
 
-kubectl port-forward podinfo-6696cd4c88-v2dzb 8080:9898
+kubectl port-forward podinfo-6696cd4c88-q7m69 8080:9898
 ```
 
 Now open browser and visit url
