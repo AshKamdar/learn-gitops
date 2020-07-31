@@ -48,7 +48,8 @@ create a **deploy key** with **write access** on your GitHub repository.
 #5 Install the `HelmRelease` Kubernetes custom resource definition:
 
 ```sh
-kubectl apply -f https://raw.githubusercontent.com/fluxcd/helm-operator/master/deploy/crds.yaml
+# kubectl apply -f https://raw.githubusercontent.com/fluxcd/helm-operator/master/deploy/crds.yaml
+kubectl apply -f https://raw.githubusercontent.com/fluxcd/helm-operator/1.2.0/deploy/crds.yaml
 ```
 
 #6 Install Flux Helm Operator with **_Helm v3_** support:
