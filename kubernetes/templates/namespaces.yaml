@@ -1,4 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ns-learn-helm3
+  name: ns-learn-helm4
