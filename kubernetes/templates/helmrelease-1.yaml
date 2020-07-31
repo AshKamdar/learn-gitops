@@ -5,6 +5,6 @@ metadata:
   namespace: default
 spec:
   chart:
-    repository: https://github.com/AshKamdar/learn-gitops/tree/master/charts/podinfo
+    repository: https://github.com/AshKamdar/learn-gitops
     name: podinfo
     version: 3.1.5
