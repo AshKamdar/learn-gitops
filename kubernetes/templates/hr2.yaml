@@ -1,4 +1,4 @@
-apiVersion: apiextensions.k8s.io/v1beta1
+apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: podinfo
@@ -6,6 +6,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "false"
 spec:
+  helmVersion: v3
   releaseName: podinfo
   chart:
     git: git@github.com:AshKamdar/learn-gitops.git
