@@ -112,3 +112,19 @@ valuesFrom:
 ```
 
 watch kubectl get hr
+
+# PodInfo Helm Charts
+
+Get the application URL by running these commands:
+
+```
+export POD_NAME=$(kubectl get pods --namespace default -l "app=podinfo,release=podinfo" -o jsonpath="{.items[0].metadata.name}")
+
+echo "Visit http://127.0.0.1:8080 to use your application"
+
+kubectl port-forward podinfo-6696cd4c88-v2dzb 8080:9898
+```
+
+Now open browser and visit url
+
+`http://127.0.0.1:8080/`
