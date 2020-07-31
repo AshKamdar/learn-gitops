@@ -7,7 +7,7 @@ backends: []
 
 ui:
   color: "#34577c"
-  message: ""
+  message: "Wow Ashish. You are great"
   logo: ""
 
 faults:

@@ -14,4 +14,3 @@ spec:
     ref: master
   values:
     replicaCount: 1
-    ui.message: "Wow Ashish. You are great"
