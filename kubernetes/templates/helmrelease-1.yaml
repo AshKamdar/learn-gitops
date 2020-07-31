@@ -1,0 +1,10 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: podinfo
+  namespace: default
+spec:
+  chart:
+    repository: https://github.com/AshKamdar/learn-gitops/tree/master/charts
+    name: podinfo
+    version: 3.1.5
