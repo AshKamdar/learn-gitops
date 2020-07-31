@@ -33,7 +33,7 @@ kubectl create ns fluxcd
 #3 Install `Flux` with url of your Git repo
 
 ```bash
-helm upgrade -i flux fluxcd/flux --wait --namespace fluxcd --set registry.pollInterval=1m --set git.pollInterval=1m --set git.url=git@github.com:AshKamdar/learn-gitops.git --set git-path=kubernetes/templates --set git-user=AshKamdar --set git-email=AshKamdar@users.noreply.github.com --set syncGarbageCollection.enabled=true
+helm upgrade -i flux fluxcd/flux --wait --namespace fluxcd --set registry.pollInterval=1m --set git.pollInterval=1m --set git.url=git@github.com:AshKamdar/learn-gitops.git --set git-path=kubernetes/templates --set git-user=AshKamdar --set git-email=adventuresincloud@gmail.com --set syncGarbageCollection.enabled=true
 ```
 
 #4 Get Flux public key
