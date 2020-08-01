@@ -13,4 +13,4 @@ spec:
     path: kubernetes/helm/charts/podinfo
     ref: master
   values:
-    replicaCount: 4
+    replicaCount: 1
