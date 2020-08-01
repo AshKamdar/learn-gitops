@@ -10,7 +10,7 @@ spec:
   releaseName: podinfo
   chart:
     git: git@github.com:AshKamdar/learn-gitops.git
-    path: charts/podinfo
+    path: kubernetes/helm/charts/podinfo
     ref: master
   values:
-    replicaCount: 1
+    replicaCount: 4
