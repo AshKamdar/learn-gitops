@@ -33,7 +33,13 @@ kubectl create ns fluxcd
 #3 Install `Flux` with url of your Git repo
 
 ```bash
-helm upgrade -i flux fluxcd/flux --wait --namespace fluxcd --set registry.pollInterval=1m --set git.pollInterval=1m --set git.url=git@github.com:AshKamdar/learn-gitops.git --set git-path=kubernetes/templates --set git-user=AshKamdar --set git-email=adventuresincloud@gmail.com --set syncGarbageCollection.enabled=true
+helm upgrade -i flux fluxcd/flux --wait --namespace fluxcd --set registry.pollInterval=60m --set git.pollInterval=60m --set git.url=git@github.com:AshKamdar/learn-gitops.git --set git-path=kubernetes/templates --set git-user=AshKamdar --set git-email=adventuresincloud@gmail.com --set syncGarbageCollection.enabled=true
+```
+
+`Debug` Helm Upgrade Command
+
+```sh
+helm upgrade --debug --dry-run
 ```
 
 #4 Get Flux public key
@@ -129,3 +135,18 @@ kubectl port-forward podinfo-6696cd4c88-q7m69 8080:9898
 Now open browser and visit url
 
 `http://127.0.0.1:8080/`
+
+### **Sync Changes**
+
+```bash
+git add -A && \
+git commit -m "scale up queue worker" && \
+git push origin master && \
+fluxctl sync --k8s-fwd-ns fluxcd
+```
+
+### **Automated deployment of new container images**
+
+https://docs.fluxcd.io/en/1.20.0/references/automated-image-update/
+
+https://docs.fluxcd.io/en/1.20.0/references/helm-operator-integration/
